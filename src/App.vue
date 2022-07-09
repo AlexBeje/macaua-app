@@ -76,7 +76,7 @@ const handleClickP3 = () => {
       <div class="score">
         <div v-for="item in itemsP1" :key="item">{{ item }}</div>
         <br />
-        <input type="text" @blur="(e) => handleBlurP1(e)" />
+        <input type="text" @blur="(e) => handleBlurP1(e)" @focus="(e) => e.target.select()"/>
         <br />
         <button @click="handleClickP1()" tabindex="-1">Undo</button>
       </div>
@@ -86,7 +86,7 @@ const handleClickP3 = () => {
       <div class="score">
         <div v-for="item in itemsP2" :key="item">{{ item }}</div>
         <br />
-        <input type="text" @blur="(e) => handleBlurP2(e)" />
+        <input type="text" @blur="(e) => handleBlurP2(e)" @focus="(e) => e.target.select()"/>
         <br />
         <button @click="handleClickP2()" tabindex="-1">Undo</button>
       </div>
@@ -96,7 +96,7 @@ const handleClickP3 = () => {
       <div class="score">
         <div v-for="item in itemsP3" :key="item">{{ item }}</div>
         <br />
-        <input type="text" @blur="(e) => handleBlurP3(e)" />
+        <input type="text" @blur="(e) => handleBlurP3(e)" @focus="(e) => e.target.select()"/>
         <br />
         <button @click="handleClickP3()" tabindex="-1">Undo</button>
       </div>
