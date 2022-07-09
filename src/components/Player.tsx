@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Box, Button, Card, TextInput, Text } from "@mantine/core";
+import { MouseEvent, useState } from "react";
+import { Box, Button, Card, TextInput, NumberInput, Text } from "@mantine/core";
 import { FocusEvent } from "react";
 
 function Player({
@@ -21,7 +21,6 @@ function Player({
     if (e.target.value) {
       setTotal(Number(e.target.value) + total);
       setItems([...items, Number(e.target.value) + total]);
-      e.target.value = "";
     }
   };
 
@@ -118,10 +117,11 @@ function Player({
             </Text>
           ))}
         </Box>
-        <TextInput
+        <NumberInput
           placeholder="Score"
           variant="default"
           onBlur={(e) => handleBlur(e)}
+          onClick={(event) => event.target.select()}
           sx={() => ({
             textAlign: "center",
           })}
