@@ -15,6 +15,7 @@ const handleBlurP1 = (e) => {
   if (e.target.value) {
     totalP1.value = Number(e.target.value) + totalP1.value;
     itemsP1.value.push(totalP1.value);
+    e.target.value = "";
   }
 };
 
@@ -34,6 +35,7 @@ const handleBlurP2 = (e) => {
   if (e.target.value) {
     totalP2.value = Number(e.target.value) + totalP2.value;
     itemsP2.value.push(totalP2.value);
+    e.target.value = "";
   }
 };
 
@@ -53,6 +55,7 @@ const handleBlurP3 = (e) => {
   if (e.target.value) {
     totalP3.value = Number(e.target.value) + totalP3.value;
     itemsP3.value.push(totalP3.value);
+    e.target.value = "";
   }
 };
 
