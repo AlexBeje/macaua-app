@@ -121,7 +121,7 @@ function Player({
           placeholder="Score"
           variant="default"
           onBlur={(e) => handleBlur(e)}
-          onClick={(event) => event.target.select()}
+          onClick={(event: any) => event.target.select()}
           sx={() => ({
             textAlign: "center",
           })}
