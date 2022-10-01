@@ -63,7 +63,7 @@ function App() {
           })}
         />
         <Text align="center" weight="bold" style={{ fontSize: "80px" }}>
-          Macaua
+          Rummikub
         </Text>
         <Button onClick={addPlayer} tabIndex={-1}>
           <Text style={{ fontWeight: "bold" }}>+</Text>
